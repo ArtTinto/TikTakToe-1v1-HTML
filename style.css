@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: LTS;
+    color: black;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;      
+    height: 100vh;
+    width: 100vw;
+
+    text-align: center;
+    background: linear-gradient(to left top, rgb(166, 42, 255), rgb(252, 227, 255));
+    font-family: LTS;
+}
+
+@font-face {
+    font-family: LTS;
+    src: url(./fonts/LTSaeada-Light.otf);
+}
+
+@keyframes appear-background {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.2;
+    }
+}
+
+@keyframes disappear-background {
+    0% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0px auto;
+}
+
+td {
+    width: min(22vw, 120px);
+    height: min(22vw, 120px);
+    border: 2px solid #000;
+    font-size: min(10vw, 40px);
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.button-area {
+    margin-bottom: 25px;     
+    text-align: center;      
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 1.2em;
+    font-family: LTS;
+    border: none;
+    border-radius: 10px;
+    background: rgb(130, 20, 220);
+    color: white;
+    cursor: pointer;
+    transition: 0.25s ease;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+}
+
+button:hover {
+    background: rgb(150, 40, 255);
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+#decisao {
+    margin-top: 25px;           
+    font-size: 1.5em;            
+    font-weight: bold;           
+    color: #222;                 
+    text-align: center;          
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.25);
+    min-height: 30px;            
+}

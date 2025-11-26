@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Tik Tak Toe</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <p id="rodadas"></p>
+
+        <div class="tabela-pai">
+
+            <div class="button-area">
+                <button onclick="reiniciar()">Reiniciar</button>
+            </div>
+
+
+            <table class="tb">
+                <tr>
+
+                    <td id="c1" data-index="0" onclick="marcar(this);getWinner()"></td>
+                    <td id="c2" data-index="1" onclick="marcar(this);getWinner()"></td>
+                    <td id="c3" data-index="2" onclick="marcar(this);getWinner()"></td>
+                </tr>
+                <tr>
+                    <td id="c4" data-index="3" onclick="marcar(this);getWinner()"></td>
+                    <td id="c5" data-index="4" onclick="marcar(this);getWinner()"></td>
+                    <td id="c6" data-index="5" onclick="marcar(this);getWinner()"></td>
+                </tr>
+                <tr>
+                    <td id="c7" data-index="6" onclick="marcar(this);getWinner()"></td>
+                    <td id="c8" data-index="7" onclick="marcar(this);getWinner()"></td>
+                    <td id="c9" data-index="8" onclick="marcar(this);getWinner()"></td>
+                </tr>
+            </table>
+            <p id="decisao"></p>
+        </div>
+    </div>
+</body>
+
+</html>
